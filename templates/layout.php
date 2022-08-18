@@ -18,6 +18,10 @@
         if ($template === "chrono"){
             require './templates/chrono.php';    
         }
+        
+        if ($template === "newGroup"){
+            require './templates/newGroup.php';    
+        }
         ?>
     </div>
 </body>

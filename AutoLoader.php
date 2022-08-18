@@ -7,7 +7,11 @@
 require "./src/classes/Database.php";
 require "./src/classes/Router.php";
 require "./src/classes/service/Auth.php";
+
 require "./src/controller/AuthController.php";
 require "./src/controller/RegisController.php";
 require "./src/controller/TimeController.php";
+require "./src/controller/GroupController.php";
+
 require "./src/models/User.php";
+require "./src/models/Track.php";

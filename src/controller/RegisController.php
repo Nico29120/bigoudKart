@@ -5,7 +5,9 @@ class RegisController{
     private const cost=["cost" => 10];
     
     public static function register (){
+        
         if(!empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['mail'])){
+            
             $db=Database::getInstance();
         
             $register = $db->prepare('INSERT INTO `users`(`username`, `mail`, `password`) VALUES (:username, :mail, :password)');
