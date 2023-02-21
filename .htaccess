@@ -2,13 +2,14 @@
     Options +FollowSymLinks
     RewriteEngine On
     
-# Stop processing if already in the /public directory
+# Stop process si déjà dans /public
 RewriteRule ^public/ - [L]
 
-# Static resources if they exist
+# Ressources statiques
 RewriteCond %{DOCUMENT_ROOT}/public/$1 -f
 RewriteRule (.+) public/$1 [L]
 
-# Route all other requests
-RewriteRule (.*) index.php?p=$1 [L,QSA]
+# Réécriture route
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
 </IfModule>

@@ -1,6 +1,8 @@
 <?php
+namespace App\classes;
+use \PDO;
 
-abstract class Database{
+abstract class Database{//singleton de la database
     
     private static $instance;
     
@@ -8,10 +10,18 @@ abstract class Database{
         
         if (!self::$instance):
             try{
+                //récupération des accès à la base de donnée via le fichier .ini
+                $db = parse_ini_file("./.ini",$process_sections = true);
+                $user = $db['user'];
+                $pass = $db['pass'];
+                $name = $db['name'];
+                $host = $db['host'];
+                $type = $db['type'];
+                //connection à la db
                 self::$instance = new PDO(
-                                    'mysql:host=db.3wa.io;port=3306;dbname=nicolasleberre_bigoudKart',
-                                    'nicolasleberre',
-                                    '384f32d0b68b34a13094b62d5de643c0'
+                                    "$type:host=$host;port=3306;dbname=$name",
+                                    "$user",
+                                    "$pass"
                                     );
             } catch(Exception $e){
                 var_dump($e);

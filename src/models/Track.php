@@ -1,4 +1,6 @@
 <?php
+namespace App\models;
+use App\classes\Database;
 
 class Track{
     public $id;
@@ -9,12 +11,16 @@ class Track{
         $this->name=$name;
         }
     }
-    public static function getAllTrack(){
+    public static function getAllTrack():array{
         $db=Database::getInstance();
         
-        $log= $db->prepare('SELECT `id`,`name` FROM `track`');
+        $log= $db->prepare(
+            'SELECT `id`,`name`
+            FROM `track`
+            ORDER BY `name`'
+            );
         
         $log->execute();
-        return $log->fetchALL();
+        return $trackList=$log->fetchALL();
     }
 }
