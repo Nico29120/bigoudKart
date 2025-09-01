@@ -19,7 +19,7 @@ class NotifController extends Render{
         //invitation acceptée, ajout de l'utilisateur au groupe, supression de la notification
         Notification::notificationsAccept($userId,$groupId);
         
-        header("Location: /bigoudkart/mygroup");
+        header("Location: /mygroup");
         
     }
     
@@ -29,7 +29,7 @@ class NotifController extends Render{
         //invitation refusée, supression de la notification
         Notification::notificationsDecline($userId,$groupId);
         
-        header("Location: /bigoudkart/mygroup");
+        header("Location: /mygroup");
     }
 
 }

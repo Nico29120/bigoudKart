@@ -10,4 +10,4 @@
     
     </ul>
 </div>
-<a href="/bigoudkart/newgroup" title="Création d'un nouveau groupe"><button id ="newgroup-submit">Nouveau Groupe</button></a>
+<a href="/newgroup" title="Création d'un nouveau groupe"><button id ="newgroup-submit">Nouveau Groupe</button></a>

@@ -1,0 +1,19 @@
+{
+  "name": "nicolasleberre/bigoudkart",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/",
+      "App\\classes\\": "src/classes",
+      "App\\classes\\service\\": "src/classes/services",
+      "App\\controller\\": "src/controllers",
+      "App\\models\\": "src/models"
+    }
+  },
+  "authors": [
+    {
+      "name": "Nicolas",
+      "email": "nicolas.le-berre@hotmail.fr"
+    }
+  ],
+  "require": {}
+}

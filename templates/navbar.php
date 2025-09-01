@@ -3,7 +3,7 @@
     use App\classes\services\Notificator;
 ?>            
 <div class="logo">
-    <a href="/bigoudkart" title="Page d'accueil"><img src="/bigoudkart/public/img/logo.png" width="100" alt="logo bigoud'kart"/></a>
+    <a href="" title="Page d'accueil"><img src="/public/img/logo.png" width="100" alt="logo bigoud'kart"/></a>
     <p>BIGOUD'KART</p>
 </div>
 <nav>
@@ -11,16 +11,16 @@
         <?php
         if (Authenticator::isLogged()): ?>
         
-        <li class="list-item"><a href="/bigoudkart/150cc" title="Page records">Mes records</a></li>
-        <li class="list-item"><a href="/bigoudkart/mygroup" title="Page mes groupes">Mes groupes</a></li>
+        <li class="list-item"><a href="/150cc" title="Page records">Mes records</a></li>
+        <li class="list-item"><a href="/mygroup" title="Page mes groupes">Mes groupes</a></li>
         <?php if (Notificator::isNotified()){ ?>
-            <li class="list-item"><a href="/bigoudkart/notification" title="Page notification">Notification</a></li>
+            <li class="list-item"><a href="/notification" title="Page notification">Notification</a></li>
         <?php };
         ?>
-        <li class="list-item"><a href="/bigoudkart/logout" title="Déconnexion">Déconnexion</a></li>
+        <li class="list-item"><a href="/logout" title="Déconnexion">Déconnexion</a></li>
         <?php
         else: ?>
-        <li class="list-item"><a href="/bigoudkart/login" title="Connexion">Connexion</a></li>
+        <li class="list-item"><a href="/login" title="Connexion">Connexion</a></li>
         <?php endif; ?>
     </ul>
     <div class="menu" id="menu-button">

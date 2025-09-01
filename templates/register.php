@@ -1,5 +1,5 @@
 <div class="register-box">
-    <form name="formRegister" method="POST" action="/bigoudkart/register" onsubmit = "return validateRegisterForm()">
+    <form name="formRegister" method="POST" action="/register" onsubmit = "return validateRegisterForm()">
         
         <div class="form-box">
             <input type="text"  name="username" id="username" required/>

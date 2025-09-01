@@ -1,4 +1,4 @@
-<form class="time-box" name="formTime" method="POST" action="/bigoudkart/addChrono">
+<form class="time-box" name="formTime" method="POST" action="/addChrono">
     <select name="track" required>
         <option value="" disabled selected>Circuits</option>
         <?php foreach ($track as $tracks): ?>

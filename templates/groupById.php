@@ -10,7 +10,7 @@
         foreach($result as $results){ ?>
     <ul>
         <li> <?= $results['username']?> => <?= $results['mail']?>
-            <a href="/bigoudkart/mygroup/<?= $groupList['id'] ?>/invite/<?= $results['id'] ?>" title="Invitation du membre dans le groupe"><button id="newmember">Ajouter au groupe</button></a>
+            <a href="/mygroup/<?= $groupList['id'] ?>/invite/<?= $results['id'] ?>" title="Invitation du membre dans le groupe"><button id="newmember">Ajouter au groupe</button></a>
         </li>
     </ul>
     

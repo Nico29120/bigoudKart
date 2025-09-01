@@ -9,13 +9,13 @@
     <meta property="og:url" content="http://www.bigoudkart.com/"/>
     <meta charset="UTF-8">
     <meta property="og:description" content="Site orienté autour du jeux vidéo Mario Kart 8 Deluxe, permettant d'enregistrer ses temps records pour chaque circuit et de les comparer avec d'autres utilisateurs" />
-    <meta property="og:image" content="/bigoudkart/public/img/MK_Nico.png"/>
+    <meta property="og:image" content="/public/img/MK_Nico.png"/>
     
     <!--favicon du site-->
-    <link rel="icon" type="image/png" href="/bigoudkart/public/img/MK_Nico.png"/>
+    <link rel="icon" type="image/png" href="/public/img/MK_Nico.png"/>
     
     <!--lien vers le css-->
-    <link rel="stylesheet" href="/bigoudkart/public/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="/public/css/style.css" type="text/css"/>
     
     <!--lien utiliser font-awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -71,7 +71,7 @@
        ?>
     </main>
     
-    <script type="module" src="/bigoudkart/public/script/navbarModal.js"></script>
+    <script type="module" src="/public/script/navbarModal.js"></script>
     
 </body>
 </html>

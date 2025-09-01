@@ -18,7 +18,7 @@ class GroupController extends Render{ //création, listing et invitation au(x) g
             $groupName=strip_tags($groupName);//supprime les balises html dans la requête
             
             Group::addGroup($groupName);
-            header("Location: /bigoudkart/mygroup");//redirection vers la page des groupes
+            header("Location: /mygroup");//redirection vers la page des groupes
         };
         self::template('newGroup');
         
@@ -30,7 +30,7 @@ class GroupController extends Render{ //création, listing et invitation au(x) g
         
             self::template('groupList',['groupList' => $groupList]);
         }else{
-            header("Location: /bigoudkart/login");//redirection vers le formulaire de connexion si l'utilisateur n'est pas connecté
+            header("Location: /login");//redirection vers le formulaire de connexion si l'utilisateur n'est pas connecté
         }
     }
     
@@ -82,7 +82,7 @@ class GroupController extends Render{ //création, listing et invitation au(x) g
              self::template('groupById',['result' => $result,'groupTime' =>$array_groupTime,'groupList' => $groupList, 'usersGroupList' => $usersGroupList,'array_groupTime' => $array_groupTime]);
              
         }else{
-            header("Location: /bigoudkart/login");
+            header("Location: /login");
         }
     }
     
@@ -95,7 +95,7 @@ class GroupController extends Render{ //création, listing et invitation au(x) g
             //création d'une notification pour l'utilisateur invité dans le groupe
             Notification::invite($fromUserId,$toUserId,$groupId);
             
-            header("Location: /bigoudkart/mygroup/$groupId");//redirection sur la page du groupe
+            header("Location: /mygroup/$groupId");//redirection sur la page du groupe
         }
     }
 }
